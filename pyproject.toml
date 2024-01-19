@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "convert_reqs_to_env"
+version = "0.1.0"
+authors = [{name = "bestavra", email = "besta.vratislav@gmail.com"}]
+description = "Pre-commit hook for converting requirements.txt to environment.yml"
+requires-python = ">=3.8"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
