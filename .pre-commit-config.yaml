@@ -1,0 +1,5 @@
+repos:
+    - repo: https://github.com/bestavra/convert_reqs_to_env
+      rev: 0.1.0
+      hooks:
+        - id: convert_reqs_to_env
