@@ -1,0 +1,5 @@
+- id: convert-reqs-to-env
+  name: Convert requirements.txt to environment.yml
+  entry: python convert_reqs_to_env.py
+  language: python
+  always_run: true
